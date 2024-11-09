@@ -19,6 +19,9 @@ export default {
         "primary-dark": "#020d3e",
         dark: "#1e1e1e",
         gradient: "#00000090"
+      },
+      backgroundImage: {
+        hero: "url('./assets/imagen1.jpg')"
       }
     },
   },
