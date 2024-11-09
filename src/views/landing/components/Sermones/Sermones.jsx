@@ -20,7 +20,6 @@ const Sermones = () => {
 
         const videosResponse = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${videosUploaded}&maxResults=6&key=${import.meta.env.VITE_YOUTUBE_API_KEY}`);
         const videosDate = await videosResponse.json();
-        console.log(videosDate.items[0]);
         setVideos(videosDate.items);
 
       } catch (error) {
