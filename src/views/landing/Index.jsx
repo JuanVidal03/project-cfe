@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Sermones from "./components/Sermones/Sermones";
 
 const Index = () => {
 
@@ -13,6 +14,7 @@ const Index = () => {
       <main className="overflow-x-hidden">
         <Hero/>
         <About/>
+        <Sermones/>
         <Footer/>
       </main> 
     </div>
