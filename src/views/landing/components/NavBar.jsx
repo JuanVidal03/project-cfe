@@ -27,7 +27,7 @@ const NavBar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
   }, []);
 
@@ -56,6 +56,6 @@ const NavBar = () => {
       </div>
     </header>
   );
-}
+};
 
 export default NavBar;
