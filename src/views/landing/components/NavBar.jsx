@@ -1,4 +1,3 @@
-import { useRef, useEffect } from "react";
 import logo from "../../../assets/logo.png";
 
 const NavBar = () => {
@@ -11,28 +10,8 @@ const NavBar = () => {
     { title: "Contacto", path: "contacto" },
   ];
 
-  const header = useRef(null);
-  // manage the bg color on scroll
-  useEffect(() => {
-
-    const handleScroll = () => {
-      if (header.current) {
-        if (window.scrollY > 5) {
-          header.current.classList.add("backdrop-blur-2xl");
-          header.current.classList.add("bg-gradient");
-        } else {
-          header.current.classList.remove("backdrop-blur-2xl");
-          header.current.classList.remove("bg-gradient");
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-  }, []);
-
   return (
-    <header ref={header} className="transition-all fixed z-50 w-full py-4 flex justify-center items-center px-16">
+    <header className="transition-all absolute z-50 w-full py-4 flex justify-center items-center px-16">
       <div className="flex items-center gap-16 max-w-[1370px]">
         <figure className="w-[6.5%]">
           <img src={logo} alt="Logo de la Iglesia panamerica centro de fe y esperanza"/>

@@ -1,4 +1,4 @@
-import daisyui from 'daisyui'
+import daisyui from "daisyui";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -21,7 +21,11 @@ export default {
         gradient: "#00000090"
       },
       backgroundImage: {
-        hero: "url('./assets/imagen1.jpg')"
+        hero: "url('./assets/imagen1.jpg')",
+        cultoDominical: "url('./assets/imagen1.jpg')",
+        jovenes: "url('./assets/imagen2.jpg')",
+        oracion: "url('./assets/imagen3.jpg')",
+        discipulado: "url('./assets/imagen4.jpg')",
       }
     },
   },
@@ -31,4 +35,4 @@ export default {
   daisyui: {
     themes: ["light"],
   }
-}
+};

@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import SermonCard from "./SermonCard";
 import { MdArrowForwardIos } from "react-icons/md";
-import { useFetchYouTubeVideos } from "../../hooks/useFetchYouTubeVideos";
+import { useFetchYouTubeVideos } from "../../../../hooks/useFetchYouTubeVideos";
 import SermonCardSkeleton from "./SermonCardSkeleton";
 
 const Sermones = () => {
@@ -16,7 +16,7 @@ const Sermones = () => {
   }, [data]);
 
   return (
-    <div className='p-16 w-full flex flex-col items-center'>
+    <section id="sermones" className='p-16 w-full flex flex-col items-center'>
       <div className='text-center mb-12 flex flex-col gap-4 max-w-[1100px]'>
         <h3 className='text-center text-primary-dark font-title text-5xl font-extrabold'>Ultimos Sermones</h3>
         <p className='text-lg'>Explora las últimas predicaciones de nuestra iglesia, mensajes llenos de esperanza, fe y enseñanza bíblica para fortalecer tu vida espiritual. Aquí encontrarás sermones recientes que te guiarán en tu caminar con Dios y te inspirarán en cada momento.</p>
@@ -41,7 +41,7 @@ const Sermones = () => {
         <span className='text-lg font-bold'>Ver todos los sermones</span>
         <MdArrowForwardIos className='text-lg' />
       </a>
-    </div>
+    </section>
   );
 };
 
