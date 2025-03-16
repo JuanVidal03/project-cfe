@@ -1,19 +1,21 @@
-import { useMemo } from "react";
+import { useEffect } from "react";
 import SermonCard from "./SermonCard";
 import { MdArrowForwardIos } from "react-icons/md";
-import { useFetchYouTubeVideos } from "../../../../hooks/useFetchYouTubeVideos";
+import { useGetYouTubeVideos } from "../../../../hooks/useFetchYouTubeVideos";
 import SermonCardSkeleton from "./SermonCardSkeleton";
+import { toast } from "react-toastify";
 
 const Sermones = () => {
+  const { isError, error, data: videos, isLoading } = useGetYouTubeVideos();
 
-  const { data, error, loading } = useFetchYouTubeVideos();
-
-  const videos = useMemo(() => {
-
-    if (!data) return [];
-    return data;
-
-  }, [data]);
+  useEffect(() => {
+    if (isError) {
+      toast.error("Hubo un error al obtener los videos :(");
+    }
+    return () => {
+      toast.clearWaitingQueue();
+    };
+  }, [isError]);
 
   return (
     <section id="sermones" className='p-16 w-full flex flex-col items-center'>
@@ -22,7 +24,7 @@ const Sermones = () => {
         <p className='text-lg'>Explora las últimas predicaciones de nuestra iglesia, mensajes llenos de esperanza, fe y enseñanza bíblica para fortalecer tu vida espiritual. Aquí encontrarás sermones recientes que te guiarán en tu caminar con Dios y te inspirarán en cada momento.</p>
       </div>
       { error && <div>{error.message}</div> }
-      { loading && <SermonCardSkeleton/> }
+      { isLoading && <SermonCardSkeleton/> }
       <div className='grid grid-cols-3 flex-wrap gap-8 w-full'>
         {
           videos?.map(video => (
