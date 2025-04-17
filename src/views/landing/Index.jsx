@@ -6,7 +6,6 @@ import Sermones from "./components/Sermones/Sermones";
 import Reuniones from "./components/Reuniones/Index";
 
 const Index = () => {
-
   document.title = "Iglesia Panamericana Centro de Fe y Esperanza Popayán";
 
   return (
