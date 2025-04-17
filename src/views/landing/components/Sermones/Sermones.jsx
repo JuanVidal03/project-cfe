@@ -10,12 +10,12 @@ const Sermones = () => {
 
   useEffect(() => {
     if (isError) {
-      toast.error("Hubo un error al obtener los videos :(");
+      toast.error("Hubo un error al obtener los videos.");
     }
     return () => {
       toast.clearWaitingQueue();
     };
-  }, [isError]);
+  }, [isError, error]);
 
   return (
     <section id="sermones" className='p-16 w-full flex flex-col items-center'>

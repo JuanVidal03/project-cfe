@@ -33,13 +33,13 @@ export default [
         "warn",
         { allowConstantExport: true },
       ],
-      // custom rules
       "semi": ["error", "always"],
       "quotes": ["error", "double"],
       "no-console": "error",
       "no-extra-semi": "error",
       "camelcase": "error",
       "prefer-const": "error",
+      "no-unused-vars": "error"
     },
   },
 ];
