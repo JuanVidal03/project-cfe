@@ -46,7 +46,7 @@ const Footer = () => {
     </div>
 
     <div className="text-white border-t w-full py-4 text-center">
-      <span>Creado por <a className="font-bold" href="mailto:juanmvg2003@gmail.com">Juan Vidal</a></span>
+      <span>Creado por <a className="font-bold" href="https://www.linkedin.com/in/juan-manuel-vidal-1ab885216" target="_blank">Juan Vidal</a></span>
     </div>
 
     </footer>

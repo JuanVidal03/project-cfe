@@ -7,20 +7,24 @@ const Hero = () => {
         <h1 className="text-8xl font-title font-bold leading-[5rem] uppercase text-white">En la tierra como<br />en el cielo</h1>
         <p className="w-full text-text max-w-[900px] mt-2 text-white">&quot;Por tanto, no tengan miedo, pues yo soy su Dios y estoy con ustedes. Mi mano victoriosa les dará fuerza y ayuda; mi mano victoriosa siempre les dará su apoyo.&quot; - Isaías 41:10</p>
         <div className="flex gap-4 mt-8">
-          <Button
-            text="Reuniones en linea"
-            color="text-white"
-            bg="bg-transparent"
-            hoverColor="hover:text-black"
-            bgHover="hover:bg-white"
-          />
-          <Button
-            text="Sermones"
-            color="text-dark"
-            bg="bg-white"
-            hoverColor="hover:text-white"
-            bgHover="hover:bg-transparent"
-          />
+          <a href="https://www.youtube.com/c/CentrodeFeyEsperanzaPopay%C3%A1n" target="_blank">
+            <Button
+              text="Reuniones en linea"
+              color="text-white"
+              bg="bg-transparent"
+              hoverColor="hover:text-black"
+              bgHover="hover:bg-white"
+            />
+          </a>
+          <a href="#sermones">
+            <Button
+              text="Sermones"
+              color="text-dark"
+              bg="bg-white"
+              hoverColor="hover:text-white"
+              bgHover="hover:bg-transparent"
+            />
+          </a>
         </div>
       </div>
     </section>
