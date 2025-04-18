@@ -23,7 +23,7 @@ export default {
         hero: "url('./assets/imagen1.jpg')",
         cultoDominical: "url('./assets/imagen1.jpg')",
         jovenes: "url('./assets/imagen2.jpg')",
-        oracion: "url('./assets/imagen3.jpg')",
+        oracion: "url('./assets/oracion.jpg')",
         discipulado: "url('./assets/imagen4.jpg')",
       }
     },
