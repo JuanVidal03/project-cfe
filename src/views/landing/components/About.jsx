@@ -1,15 +1,18 @@
 import aboutImg from "../../../assets/nosotros.jpg";
 import misionImg from "../../../assets/imagen3.jpg";
 import visionImg from "../../../assets/imagen2.jpg";
+import TranslateUp from "../../../animations/TranslateUp";
 
 const About = () => {
   return (
     <section id="nosotros">
       <div className="flex flex-col justify-center items-center">
         <div className="flex p-16 justify-center items-center max-w-[1300px]">
-          <p className="text-center text-lg">
-            El amor infinito de Dios busca derramar bendiciones sobre nosotros, ¡incluso más de las que imaginamos! Anhela que disfrutemos de una vida plena y abundante, y la llave para alcanzarla se encuentra en una relación profunda y creciente con Él. La vida cristiana es un viaje de descubrimiento, donde nuestro propósito, sentido y destino se encuentran en la dependencia de Dios. No se trata de logros personales o esfuerzos humanos, sino de permitir que su <strong>espíritu santo</strong> obre en nuestras vidas.
-          </p>
+          <TranslateUp>
+            <p className="text-center text-lg">
+              El amor infinito de Dios busca derramar bendiciones sobre nosotros, ¡incluso más de las que imaginamos! Anhela que disfrutemos de una vida plena y abundante, y la llave para alcanzarla se encuentra en una relación profunda y creciente con Él. La vida cristiana es un viaje de descubrimiento, donde nuestro propósito, sentido y destino se encuentran en la dependencia de Dios. No se trata de logros personales o esfuerzos humanos, sino de permitir que su <strong>espíritu santo</strong> obre en nuestras vidas.
+            </p>
+          </TranslateUp>
         </div>
       </div>
 
