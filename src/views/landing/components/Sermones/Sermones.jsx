@@ -4,6 +4,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { useGetYouTubeVideos } from "../../../../hooks/useFetchYouTubeVideos";
 import SermonCardSkeleton from "./SermonCardSkeleton";
 import { toast } from "react-toastify";
+import TranslateUp from "../../../../animations/TranslateUp";
 
 const Sermones = () => {
   const { isError, error, data: videos, isLoading } = useGetYouTubeVideos();
@@ -18,14 +19,16 @@ const Sermones = () => {
   }, [isError, error]);
 
   return (
-    <section id="sermones" className='p-16 w-full flex flex-col items-center'>
+    <section id="sermones" className='px-4 py-12 sm:p-16 w-full flex flex-col items-center'>
       <div className='text-center mb-12 flex flex-col gap-4 max-w-[1100px]'>
-        <h3 className='text-center text-primary-dark font-title text-5xl font-extrabold'>Ultimos Sermones</h3>
-        <p className='text-lg'>Explora las últimas predicaciones de nuestra iglesia, mensajes llenos de esperanza, fe y enseñanza bíblica para fortalecer tu vida espiritual. Aquí encontrarás sermones recientes que te guiarán en tu caminar con Dios y te inspirarán en cada momento.</p>
+        <TranslateUp>
+          <h3 className='text-center text-primary-dark font-title text-5xl font-extrabold'>Ultimos Sermones</h3>
+          <p className='text-lg'>Explora las últimas predicaciones de nuestra iglesia, mensajes llenos de esperanza, fe y enseñanza bíblica para fortalecer tu vida espiritual. Aquí encontrarás sermones recientes que te guiarán en tu caminar con Dios y te inspirarán en cada momento.</p>
+        </TranslateUp>
       </div>
       { error && <div>{error.message}</div> }
       { isLoading && <SermonCardSkeleton/> }
-      <div className='grid grid-cols-3 flex-wrap gap-8 w-full'>
+      <div className='grid sm:grid-cols-3 flex-wrap gap-8 w-full'>
         {
           videos?.map(video => (
             <SermonCard
