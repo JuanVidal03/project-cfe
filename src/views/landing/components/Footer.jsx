@@ -3,19 +3,17 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-dark px-16 pt-16">
-
-    <div className="grid grid-cols-4 gap-12 pb-11">
-
+    <footer className="bg-primary-dark p-4 sm:px-16 sm:pt-16">
+    <div className="sm:grid sm:grid-cols-4 gap-12 pb-11">
       <div className="flex flex-col gap-4">
-        <div className="flex items-center gap-4">
-          <figure className="w-[60%]">
+        <div className="flex items-center text-center sm:text-start gap-4">
+          <figure className="w-[30%] sm:w-[60%]">
             <img src={logo} alt="logo de la iglesia" />
           </figure>
           <h5 className="text-white font-title text-3xl uppercase leading-7">Iglesia fe y<br /> esperanza Popayán</h5>
         </div>
-        <p className="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita saepe, dolor, nihil explicabo in aliquid.</p>
-        <div className="flex gap-3">
+        <p className="text-white text-center sm:text-start">Sé parte de una familia donde el amor de Dios transforma vidas. En nuestra iglesia encontrarás un lugar para crecer, servir y cumplir tu propósito. ¡Te esperamos con los brazos abiertos!</p>
+        <div className="flex justify-center sm:justify-start gap-3">
           <a href="https://facebook.com/cfe.popayan" target="_blank" className="border border-white p-3 rounded-full transition-all hover:bg-white group">
             <FaFacebookF className="text-white text-lg transition-all group-hover:text-primary"/>
           </a>
@@ -28,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-white">
+      <div className="text-white border-t sm:border-t-0 mt-4 sm:mt-0 pt-4 sm:pt-0">
         <h5 className="font-title text-3xl mb-4">Contáctanos</h5>
         <div className="flex flex-col gap-1">
           <a href="#">+57 (311) 315 8506</a>
