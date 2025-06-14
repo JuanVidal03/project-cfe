@@ -9,8 +9,8 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Landing/>}/>
-          <Route path="*" element={<h1>Ruta no existe</h1>}/>
+          <Route path="/" element={<Landing />} />
+          <Route path="*" element={<h1>Ruta no existe</h1>} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
-::selection{
-  background-color: #0A207E;
+::selection {
+  background-color: #0a207e;
   color: #fff;
 }
-*{
-  scroll-behavior: smooth
+* {
+  scroll-behavior: smooth;
 }
 @tailwind base;
 @tailwind components;
