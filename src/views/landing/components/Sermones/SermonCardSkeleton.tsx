@@ -1,12 +1,8 @@
-
 const SermonCardSkeleton = () => {
-
   return (
-    <div className='grid grid-cols-3 flex-wrap gap-8 w-full'>
-
+    <div className="grid grid-cols-3 flex-wrap gap-8 w-full">
       <div className="w-full space-y-4 transition-all hover:scale-[1.02]">
-        <div className="skeleton w-full h-52">
-        </div>
+        <div className="skeleton w-full h-52"></div>
         <div className="flex flex-col gap-2 pb-4 px-4">
           <h6 className="skeleton w-full h-4"></h6>
           <div className="flex gap-2 items-center">
@@ -20,8 +16,7 @@ const SermonCardSkeleton = () => {
         </div>
       </div>
       <div className="w-full space-y-4 transition-all hover:scale-[1.02]">
-        <div className="skeleton w-full h-52">
-        </div>
+        <div className="skeleton w-full h-52"></div>
         <div className="flex flex-col gap-2 pb-4 px-4">
           <h6 className="skeleton w-full h-4"></h6>
           <div className="flex gap-2 items-center">
@@ -35,8 +30,7 @@ const SermonCardSkeleton = () => {
         </div>
       </div>
       <div className="w-full space-y-4 transition-all hover:scale-[1.02]">
-        <div className="skeleton w-full h-52">
-        </div>
+        <div className="skeleton w-full h-52"></div>
         <div className="flex flex-col gap-2 pb-4 px-4">
           <h6 className="skeleton w-full h-4"></h6>
           <div className="flex gap-2 items-center">
@@ -49,7 +43,6 @@ const SermonCardSkeleton = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

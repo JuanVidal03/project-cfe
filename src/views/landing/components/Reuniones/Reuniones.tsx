@@ -1,8 +1,15 @@
 import { useState } from "react";
 import Button from "../Button";
 
+interface Reuniones {
+  id: number;
+  title: string;
+  text: string;
+  buttonText: string;
+}
+
 const Reuniones = () => {
-  const reuniones = [
+  const reuniones: Reuniones[] = [
     {
       id: 1,
       title: "Cultos dominicales",
@@ -29,7 +36,7 @@ const Reuniones = () => {
     },
   ];
 
-  const [isActive, setIsActive] = useState(1);
+  const [isActive, setIsActive] = useState<number>(1);
 
   return (
     <div
@@ -39,15 +46,15 @@ const Reuniones = () => {
           isActive === 1
             ? "bg-cultoDominical"
             : isActive === 2
-            ? "bg-jovenes"
-            : isActive === 3
-            ? "bg-oracion"
-            : "bg-discipulado"
+              ? "bg-jovenes"
+              : isActive === 3
+                ? "bg-oracion"
+                : "bg-discipulado"
         }
         relative after:absolute after:bg-gradient after:w-full after:h-full
       `}
     >
-      {reuniones.map((reunion) => (
+      {reuniones.map(reunion => (
         <div
           onMouseEnter={() => setIsActive(reunion.id)}
           key={reunion.id}
