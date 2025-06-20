@@ -45,20 +45,20 @@ const NavBar = () => {
         <div className="relative sm:hidden">
           <button
             onClick={isMenuOpen ? handleInactive : handleActive}
-            className="flex flex-col justify-center gap-2 w-16 h-16 p-3 bg-white rounded-full relative z-[70]"
+            className="flex flex-col justify-center gap-2 w-16 h-16 p-3 bg-white rounded-full relative z-70"
           >
             <div
-              className={`rounded-2xl h-1 w-1/2 bg-black duration-500 ${isMenuOpen && "rotate-[225deg] -translate-x-[12px] -translate-y-[1px]"} origin-right`}
+              className={`rounded-2xl h-1 w-1/2 bg-black duration-500 ${isMenuOpen && "rotate-225 -translate-x-[12px] -translate-y-px"} origin-right`}
             ></div>
             <div
               className={`rounded-2xl h-1 w-full bg-black duration-500 ${isMenuOpen && "-rotate-45"}`}
             ></div>
             <div
-              className={`rounded-2xl h-1 w-1/2 bg-black duration-500 place-self-end ${isMenuOpen && "rotate-[225deg] translate-x-[12px] translate-y-[1px]"} origin-left`}
+              className={`rounded-2xl h-1 w-1/2 bg-black duration-500 place-self-end ${isMenuOpen && "rotate-225 translate-x-[12px] translate-y-px"} origin-left`}
             ></div>
           </button>
           <div
-            className={`fixed top-0 left-0 w-screen h-screen bg-primary-dark z-[60] ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} transition-opacity duration-500`}
+            className={`fixed top-0 left-0 w-screen h-screen bg-primary-dark z-60 ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} transition-opacity duration-500`}
           >
             <ul className="p-6 w-full h-full space-y-4 text-white text-lg flex flex-col justify-center items-center">
               {menuItems?.map(menuItem => (
@@ -69,7 +69,7 @@ const NavBar = () => {
                 >
                   <a
                     href={`#${menuItem.path}`}
-                    className="text-white text-text relative transition-all after:absolute after:content-[''] after:w-full after:h-[2px] after:bg-white after:transition-all after:top-full after:left-[-100%] hover:after:left-0"
+                    className="text-white text-text relative transition-all after:absolute after:content-[''] after:w-full after:h-[2px] after:bg-white after:transition-all after:top-full after:-left-full hover:after:left-0"
                   >
                     {menuItem.title}
                   </a>
@@ -85,7 +85,7 @@ const NavBar = () => {
               <li className="overflow-hidden" key={menuItem.title}>
                 <a
                   href={`#${menuItem.path}`}
-                  className="text-white text-text relative transition-all after:absolute after:content-[''] after:w-full after:h-[2px] after:bg-white after:transition-all after:top-full after:left-[-100%] hover:after:left-0"
+                  className="text-white text-text relative transition-all after:absolute after:content-[''] after:w-full after:h-[2px] after:bg-white after:transition-all after:top-full after:-left-full hover:after:left-0"
                 >
                   {menuItem.title}
                 </a>
