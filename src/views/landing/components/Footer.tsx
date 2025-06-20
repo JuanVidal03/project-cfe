@@ -58,7 +58,7 @@ const Footer = () => {
         <div className="col-span-2">
           <h5 className="font-title text-3xl mb-4 text-white">Dirección</h5>
           <iframe
-            className="w-full h-[15rem]"
+            className="w-full h-60"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.13749424677457!2d-76.61161366666128!3d2.440354556115929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30031a3c71f5ef%3A0xd869cbc13e5f5e63!2sIglesia%20Cristiana%20Centro%20de%20Fe%20y%20Esperanza!5e0!3m2!1ses!2sco!4v1730571192452!5m2!1ses!2sco"
           ></iframe>
         </div>
