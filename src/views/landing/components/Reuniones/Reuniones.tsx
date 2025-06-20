@@ -44,7 +44,7 @@ const Reuniones = () => {
         grid overflow-hidden duration-700 transition-all bg-center bg-cover grid-cols-4 h-[90vh] w-full
         ${
           isActive === 1
-            ? "bg-cultoDominical"
+            ? "bg-culto-dominical"
             : isActive === 2
               ? "bg-jovenes"
               : isActive === 3
