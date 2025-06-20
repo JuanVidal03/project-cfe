@@ -8,34 +8,34 @@ interface Reuniones {
   buttonText: string;
 }
 
-const Reuniones = () => {
-  const reuniones: Reuniones[] = [
-    {
-      id: 1,
-      title: "Cultos dominicales",
-      text: "En la Iglesia Panamericana Fe y Esperanza nos congregamos con la finalidad de adorar a Dios, y ser edificados por su palabra;  además es una forma de fortalecer nuestras relaciones con otros creyentes. La comunidad cristiana es una fuente de apoyo y ánimo en momentos de dificultad",
-      buttonText: "Ver ubicacion",
-    },
-    {
-      id: 2,
-      title: "Jovenes",
-      text: "Cada sábado, los jóvenes tienen una cita a las 6:30 p.m. En un ambiente ameno, son edificados para vivir de manera diferente en un mundo absorbente. Los preadolescentes (12 a 15 años) también tienen un espacio pensado para ellos: sábados a las 4:00 p.m.",
-      buttonText: "Ver ubicacion",
-    },
-    {
-      id: 3,
-      title: "Oración",
-      text: "En Fe y Esperanza creemos en el poder de la oración. Llevamos nuestras peticiones al trono de la gracia; allí recibiremos su misericordia y encontraremos la gracia que nos ayudará cuando más la necesitemos.",
-      buttonText: "Dejanos tu petición",
-    },
-    {
-      id: 4,
-      title: "Casas de paz",
-      text: "Son espacios en casas donde se establecen vínculos saludables con la Iglesia a partir de la fe en el Señor Jesús y su palabra, constituyéndose así como discípulos suyos.",
-      buttonText: "Quiero ser parte",
-    },
-  ];
+export const reuniones: Reuniones[] = [
+  {
+    id: 1,
+    title: "Cultos dominicales",
+    text: "En la Iglesia Panamericana Fe y Esperanza nos congregamos con la finalidad de adorar a Dios, y ser edificados por su palabra;  además es una forma de fortalecer nuestras relaciones con otros creyentes. La comunidad cristiana es una fuente de apoyo y ánimo en momentos de dificultad",
+    buttonText: "Ver ubicacion",
+  },
+  {
+    id: 2,
+    title: "Jovenes",
+    text: "Cada sábado, los jóvenes tienen una cita a las 6:30 p.m. En un ambiente ameno, son edificados para vivir de manera diferente en un mundo absorbente. Los preadolescentes (12 a 15 años) también tienen un espacio pensado para ellos: sábados a las 4:00 p.m.",
+    buttonText: "Ver ubicacion",
+  },
+  {
+    id: 3,
+    title: "Oración",
+    text: "En Fe y Esperanza creemos en el poder de la oración. Llevamos nuestras peticiones al trono de la gracia; allí recibiremos su misericordia y encontraremos la gracia que nos ayudará cuando más la necesitemos.",
+    buttonText: "Dejanos tu petición",
+  },
+  {
+    id: 4,
+    title: "Casas de paz",
+    text: "Son espacios en casas donde se establecen vínculos saludables con la Iglesia a partir de la fe en el Señor Jesús y su palabra, constituyéndose así como discípulos suyos.",
+    buttonText: "Quiero ser parte",
+  },
+];
 
+const Reuniones = () => {
   const [isActive, setIsActive] = useState<number>(1);
 
   return (

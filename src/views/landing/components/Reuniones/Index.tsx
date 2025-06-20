@@ -1,4 +1,5 @@
 import Reuniones from "./Reuniones";
+import ReunionesSlider from "./Slider";
 import TranslateUp from "@/animations/TranslateUp";
 
 const Index = () => {
@@ -30,6 +31,7 @@ const Index = () => {
       </div>
       <div className="w-full">
         <Reuniones />
+        <ReunionesSlider />
       </div>
     </div>
   );
