@@ -51,7 +51,7 @@ const Footer = () => {
           <h5 className="font-title text-3xl mb-4">Contáctanos</h5>
           <div className="flex flex-col gap-1">
             <a href="#">+57 (311) 315 8506</a>
-            <a href="#">contacto@cfepopayan.com</a>
+            <a href="#">info@cfepopayan.org</a>
           </div>
         </div>
 
@@ -64,11 +64,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-white border-t w-full py-4 text-center">
+      <div className="text-gray-500 border-t w-full py-4 text-center">
         <span>
-          Creado por{" "}
+          Created by {""}
           <a
-            className="font-bold"
+            className="font-bold text-gray-400"
             href="https://www.linkedin.com/in/juan-manuel-vidal-1ab885216"
             target="_blank"
             rel="noreferrer"
