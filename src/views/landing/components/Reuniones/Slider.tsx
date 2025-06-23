@@ -7,9 +7,8 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import Button from "../Button";
 import { reuniones } from "./Reuniones";
-// images
-import image1 from "@assets/imagen1.jpg";
 
 const ReunionesSlider = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -43,12 +42,22 @@ const ReunionesSlider = () => {
         <CarouselContent className="flex gap-2.5">
           {reuniones?.map(reunion => (
             <CarouselItem
-              className="w-full border border-gray-300 p-4 rounded-2xl bg-cover text-white"
-              style={{ backgroundImage: `url(${image1})` }}
+              className="w-full border border-gray-300 p-5 rounded-2xl flex flex-col justify-evenly bg-linear-to-br/hsl from-primary-dark to-blue-800"
               key={reunion.id}
             >
-              <h6 className="font-semibold text-lg mb-2">{reunion.title}</h6>
-              <p>{reunion.text}</p>
+              <div>
+                <h6 className="font-semibold text-lg mb-2 text-white">
+                  {reunion.title}
+                </h6>
+                <p className="mb-4 text-white">{reunion.text}</p>
+              </div>
+              <Button
+                text={reunion.buttonText}
+                bg="bg-white"
+                bgHover=""
+                hoverColor="transparent"
+                color="text-primary-dark"
+              />
             </CarouselItem>
           ))}
         </CarouselContent>
