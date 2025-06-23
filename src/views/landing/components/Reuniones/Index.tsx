@@ -1,4 +1,5 @@
 import Reuniones from "./Reuniones";
+import ReunionesSlider from "./Slider";
 import TranslateUp from "@/animations/TranslateUp";
 
 const Index = () => {
@@ -29,7 +30,14 @@ const Index = () => {
         </div>
       </div>
       <div className="w-full">
-        <Reuniones />
+        {/* desktop view */}
+        <div className="hidden lg:block">
+          <Reuniones />
+        </div>
+        {/* just for mobile */}
+        <div className="lg:hidden pb-12 px-4">
+          <ReunionesSlider />
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <div className="w-full max-w-[1400px] relative z-20">
         <TranslateUp>
-          <h1 className="text-6xl lg:text-8xl font-title font-bold leading-[3rem] lg:leading-[5rem] uppercase text-white">
+          <h1 className="text-6xl lg:text-8xl font-title font-bold leading-12 lg:leading-20 uppercase text-white">
             En la tierra como
             <br />
             en el cielo
