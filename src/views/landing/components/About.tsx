@@ -1,6 +1,6 @@
-import aboutImg from "../../../assets/nosotros.jpg";
-import misionImg from "../../../assets/imagen3.jpg";
-import visionImg from "../../../assets/imagen2.jpg";
+import aboutImg from "@assets/bienvenida-jovenes.jpeg";
+import misionImg from "@assets/nosotros.jpg";
+import visionImg from "@assets/imagen2.jpg";
 import TranslateUp from "@/animations/TranslateUp";
 
 const About = () => {

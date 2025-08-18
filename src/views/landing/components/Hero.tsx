@@ -1,12 +1,21 @@
 import TranslateUp from "@/animations/TranslateUp";
 import Button from "./Button";
+import HeroVideo from "@assets/hero-video.mp4";
 
 const Hero = () => {
   return (
     <section
       id="inicio"
-      className="w-screen bg-hero bg-cover bg-center p-4 pb-12 sm:pb-16 sm:p-16 h-screen flex sm:justify-center items-end relative after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-[#00000070]"
+      className="relative w-screen bg-center p-4 pb-12 sm:pb-16 sm:p-16 h-screen flex sm:justify-center items-end after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-[#00000070]"
     >
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        autoPlay
+        loop
+        muted
+      >
+        <source src={HeroVideo} type="video/mp4" />
+      </video>
       <div className="w-full max-w-[1400px] relative z-20">
         <TranslateUp>
           <h1 className="text-6xl lg:text-8xl font-title font-bold leading-12 lg:leading-20 uppercase text-white">
