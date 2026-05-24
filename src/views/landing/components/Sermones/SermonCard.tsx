@@ -31,7 +31,7 @@ const SermonCard = ({ video }: { video: Video }) => {
       <TranslateUp>
         <div className="w-full">
           <img
-            src={video.snippet.thumbnails.maxres.url}
+            src={video.snippet.thumbnails.maxres?.url}
             alt={video.snippet.title}
           />
         </div>
